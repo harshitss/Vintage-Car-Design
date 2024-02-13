@@ -177,3 +177,76 @@
     color:#bb8d31;
     font-size: 1.7rem;
 }
+.featuredI{
+    height: 65vh;
+    background-color:rgb(14, 29, 28);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.featuredI .container{
+    height: 70%;
+    width: 80vw;
+    margin: auto;
+}
+.Inventoryhead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#fff ;
+}
+.Inventoryhead h2{
+    font-family: POPPINS;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.Inventoryhead .button{
+    border: none;
+    border-radius: 50%;
+    padding: 0.8rem;
+    background:transparent ;  
+    outline:2px solid #c39231;
+    cursor: pointer;
+    margin: 0.5rem;
+    cursor: pointer;
+
+}
+.Inventorycard{
+    display: flex;
+    overflow-x: scroll;
+    
+}
+.Inventorycard::-webkit-scrollbar{
+    display: none;
+}
+.Inventorycard .cardouter{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 2rem;  
+}
+.Inventorycard .cardinner{
+    width: 352px;
+    margin:2rem 0 2rem 0;
+}
+.Inventorycard .image img{
+    height: 200px;
+    width: 350px;
+}
+.Inventorycard .image{
+    border: 1px solid #bb8d31 ;
+    margin-bottom: 2rem;
+    background-color: #bb8d31;
+}
+.Inventorycard .image h3{
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+.Inventorycard .carddetails{
+    margin-left: 2rem;
+    color: white;
+    font-family:Poppins;
+}
+.carddetails > p,h3,b{
+    font-family: inherit;
+    padding: 2px;
+}
