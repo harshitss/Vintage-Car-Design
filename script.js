@@ -15,17 +15,33 @@ play.addEventListener('click',(e)=>{
 // END
 
 // FEATURED INVENTORY IMAGE CAROUSEL
-const scrollContainer= document.querySelector(".Inventorycard")
+const scrollContainer= document.querySelector(".Inventorycard ")
 const leftBtn= document.getElementById("left")
 const rightBtn= document.getElementById("right")
 
 leftBtn.addEventListener('click',(e)=>{
     console.log("click")
     scrollContainer.style.scrollBehavior = 'smooth';
-    scrollContainer.scrollLeft -=350;
+    scrollContainer.scrollLeft -=400;
 });
 rightBtn.addEventListener('click',(e)=>{
     console.log("click")
     scrollContainer.style.scrollBehavior = 'smooth';
-    scrollContainer.scrollLeft +=350;
+    scrollContainer.scrollLeft +=400;
 });
+// END
+const reviewScroll= document.querySelector(".reviewcardwrapper");
+const rleftBtn=document.getElementById("rleft");
+const rrightBtn=document.getElementById("rright");
+const card= document.querySelector('.reviewcard')
+
+rleftBtn.addEventListener('click',(e)=>{
+    console.log('click');
+    reviewScroll.scrollLeft -=550;
+    reviewScroll.style.scrollBehavior = 'smooth'; 
+})
+rrightBtn.addEventListener('click',(e)=>{
+    console.log('click');
+    reviewScroll.scrollLeft +=550;
+    reviewScroll.style.scrollBehavior = 'smooth';
+})

@@ -186,7 +186,7 @@
 }
 .featuredI .container{
     height: 70%;
-    width: 80vw;
+    width: 85vw;
     margin: auto;
 }
 .Inventoryhead{
@@ -214,7 +214,7 @@
 .Inventorycard{
     display: flex;
     overflow-x: scroll;
-    
+    cursor: pointer;
 }
 .Inventorycard::-webkit-scrollbar{
     display: none;
@@ -222,7 +222,7 @@
 .Inventorycard .cardouter{
     display: grid;
     grid-template-columns: repeat(6,1fr);
-    grid-gap: 2rem;  
+    grid-gap: 4rem;  
 }
 .Inventorycard .cardinner{
     width: 352px;
@@ -249,4 +249,180 @@
 .carddetails > p,h3,b{
     font-family: inherit;
     padding: 2px;
+}
+.sellingsection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#f7f7f7;
+    height: 50vh;
+}
+.sellcontent h1{
+    font-size: 2.5rem;
+    margin: 6rem 8rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #584114;
+    font-weight:500;
+}
+.bg img{
+    height: 49vh;
+}
+.sellcontent button{
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    background-color:rgb(14, 29, 28);
+    color: white;
+    padding: .8rem 1.5rem;
+    font-size: 1.1rem;
+    font-family: poppins;
+    margin-left: 8rem;
+}
+.reviews{
+    height: 100vh;
+    background-color:  rgb(27, 57, 55);
+}
+.reviewtext{
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.review-button{
+    border: none;
+    border-radius: 50%;
+    padding: 1.2rem;
+    background:transparent ;  
+    outline:2px solid #c39231;
+    cursor: pointer;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+.reviewtext h1{
+    font-size: 3rem;
+    font-weight: 500;
+}
+.reviewtext h2{
+    font-family: poppins;
+    font-weight: 600;
+}
+.reviewcardwrapper{
+    display: flex;
+    overflow-x: scroll;
+    cursor: pointer;    
+    width: 85vw;
+    margin: auto;
+}
+.reviewcardouter{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 3rem; 
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+.reviewcardwrapper::-webkit-scrollbar{
+    display: none;
+}
+.reviewcard{
+    background-color: #d9d9d9;
+    padding: 2rem;
+    height: 450px;
+    border-radius: .7rem;
+    width: 450px;
+}
+.reviewcard h3{
+    color: #926C1E;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    height: 50px;
+}
+.reviewcard p{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    height: 200px;
+}
+.reviewcard h4{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.blog{
+    background-color:rgb(14, 29, 28);   
+    height: 110vh;
+   
+}
+.blogcontent{
+    width: 85vw;
+    margin: auto;
+
+
+}
+.blogcontent > h2{
+    font-family: sans-serif;
+    color: white;
+    padding: 6rem 0 3rem 0;
+}
+.blogcards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem
+}
+.blogcard {
+    height: 80vh;
+
+}
+/* .blogcard >img,h2,p,h3{ */
+    /* padding: 1rem 0; */
+}
+
+.blogbtn{
+    text-align: center;
+}
+
+.blogbtn button{
+    cursor: pointer;
+    border: none;
+    padding: 1rem 2.5rem;
+    color: white;
+    background-color:rgb(25, 49, 49);
+    font-size: 1rem;
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+/* .blogcard > h2,h3{
+    font-family: poppins;
+    color: #bb8d31;
+} */
+.blogcard h2{
+    font-size: 1.3rem;
+    height: 4rem; 
+}
+.blogcard > p{
+    font-size: 1rem;
+    color: white;
+    font-family: poppins;
+    font-weight: 400;
+    height: 120px;
+} 
+.blogcard h3{
+    font-weight: 300;
+}
+.blogcard img{
+    width: 500px;
 }
