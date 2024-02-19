@@ -386,8 +386,8 @@
     height: 80vh;
 
 }
-/* .blogcard >img,h2,p,h3{ */
-    /* padding: 1rem 0; */
+.blogcard >img,.blogcard h2,.blogcard p,.blogcard h3{ 
+     padding: 1rem 0;
 }
 
 .blogbtn{
@@ -404,17 +404,18 @@
     font-family: poppins;
     font-weight: 600;
     font-size: 1.1rem;
+    margin: 1.5rem 0;
 }
-/* .blogcard > h2,h3{
+.blogcard > h2, .blogcard > h3{
     font-family: poppins;
     color: #bb8d31;
-} */
+}
 .blogcard h2{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     height: 4rem; 
 }
 .blogcard > p{
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: white;
     font-family: poppins;
     font-weight: 400;
@@ -425,4 +426,136 @@
 }
 .blogcard img{
     width: 500px;
+    height:300px;
+}
+.signup{
+    background-color:rgb(246,244,223);
+    height: 80vh;
+}
+.signup-content{ 
+    width: 85vw;
+    margin: 0 auto 2rem auto;
+    padding-top: 1rem;
+    height: 60vh;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    gap: 3rem;
+}
+.signup-text>h1{
+    font-family: poppins;
+    color: #473614;
+}
+.signup-text>h3{
+    font-family: poppins;
+    color: #473614;
+    font-weight: normal;
+}
+.signup-text>p{
+    font-family: poppins;
+}
+.signup-input{
+    background-color: transparent;
+    display: block;
+    margin: 1rem 0;
+    padding: 1rem ;
+    font-size: 1rem;
+    width: 40vw;
+    border: 1px solid #c7a050 ;
+    font-family: poppins;
+
+}
+.signupbtn{
+    text-align: end;
+}
+.signupbtn >button{
+    border: none;
+    font-family: poppins;
+    font-size: 1.1rem;
+    background-color: #b89246;
+    color: #fff;
+    padding: 0.8rem 1.7rem;
+    border-radius: 3px;
+    box-shadow:0px 4px #6d572c; ;
+    
+}
+.signupimage{
+    border-top:2px solid  #b89246;
+    margin-top: 2rem;
+    padding: 9px 0 0 0;
+}
+.signupimage > img{
+    height: 500px;
+    width: 800px;
+}
+.signup-contact{
+    border-top: 2px solid black;
+    width: 85vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 15vh ;
+
+}
+.signup-contact i{
+    font-size: 3rem;
+    margin-right: 1rem;
+}
+.phone,.location,.email,.hours{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    gap: .5rem;
+}
+.phone,.location,.email{
+    border-right: 2px dotted #b89246 ;
+    padding-right: 5rem;
+}
+.phone h3,.location h3,.email h3,.hours h3{
+    color: #bfa26e;
+    margin-bottom: 5px;
+}
+.phone p,.location p,.email p,.hours p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.hours-inner span{
+    float:  left;
+    margin-right: 6px;
+}
+.footer{
+    /* height: 10vh; */
+    background-color: rgb(25, 49, 49);
+    border-bottom: 1px solid #b89246;
+}
+
+.footer-container{
+    height: 10vh;
+    width: 85vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.footer-left{
+    display: flex;
+    align-items: center;
+}
+.footerlogo img{
+    height: 10vh;
+}
+.footer-copyright >p{
+    color:#b89246 ;
+}
+.footer-copyright >p>span{
+    color: #fff;
+    cursor: pointer;
+}
+.footer-icons ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    cursor: pointer;
 }
